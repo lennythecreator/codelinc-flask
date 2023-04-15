@@ -1,0 +1,28 @@
+body{
+    
+    display: flex;
+    background-color: #64a4fb;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    top: 100%; 
+   
+}
+
+.Question{
+    
+    align-items: center;
+    left: 50px;
+    font-size: 50px;
+}
+.landing_Page_items{
+    background-color:#046cfc;
+    
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    width: 500px;
+    height: 350px;
+
+}
