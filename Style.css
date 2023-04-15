@@ -27,31 +27,3 @@ body{
 
 }
 
-.imgbox{
-    position: relative;
-    width: 100%;
-    top: 70px;
-    height: 25%;
-}
-.imgbox img{
-    position: relative;
-    height: 100%;
-    border-radius: 25%;
-    border-color:violet;
-    
-    width: calc(130% - 340px);
-    top: -100px;
-    bottom: -50px;
-    right: 50px;
-    transform: rotate(180 deg);
-    animation:animateUser 8s linear infinite;
-    
-    
-}
-
-@keyframes animateUser{
-    50%{
-        right: 20px;
-        top: -90px;
-    }
-}
