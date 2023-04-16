@@ -4,37 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/Style.css">
+    <link rel="stylesheet" href="Static/style.css">
     <title>Document</title>
 </head>
 <body>
     
         <div class="questionheader">
-            <h2>Question</h2>
+            <h2>Questionnaire</h2>
         </div>
         <div>
             <form class="Questions" action="post_questionaRe" method="post">
                 <div class="question_group">
-                  <label for="q1"></label><br>
+                  <label for="q1">What is your name? </label><br>
                   <input type="text" id="name" name="name">
                 </div>
                 <div class="question_group">
-                  <label for="q2">what is your Monthly Income(E.g: $5000):</label><br>
+                  <label for="q2">What is your monthly income? (E.g: $5000): </label><br>
                   <input type="text" id="MI" name="MI">
                 </div>
                 <div class="question_group">
-                  <label for="q3">How much do you spend a month(E.g: $5000):</label><br>
+                  <label for="q3">How much do you spend per month? (E.g: $5000): </label><br>
                   <input type="text" id="ME" name="ME">
                 </div>
                 <div class="question_group">
-                  <label for="q4">What are you Financail Goals:</label><br>
+                  <label for="q4">What are your Financial Goals?: </label><br>
                   <select id="GOAL" name="GOAL">
                     <option value="">--Please choose an option--</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Paying off debt.</option>
+                    <option value="option2">Saving for the future.</option>
+                    <option value="option3">Increasing financial literacy.</option>
                   </select>
                 </div>
+                <br />
+                <br />
+                <br />
                 <div class="question_group">
                   <input type="submit" value="Submit" class="Button">
                 </div>
