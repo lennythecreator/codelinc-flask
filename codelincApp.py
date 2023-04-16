@@ -53,8 +53,8 @@ def Post_Questionare():
 
 @app.route("/Dashboard/<name>/<MI>/<ME>/<GOAL>")
 def Dashboard_values(name,MI,ME,GOAL):
-   
+    Total=((int(MI)-int(ME))*12)*10
     #user = request.args.get(name=name,MI=MI,ME=ME,GOAL=GOAL)
-    return render_template('profile.html')
+    return render_template('profile.html',name=name,Total=Total)
 if __name__ == '__main__':
     app.run(debug=True)

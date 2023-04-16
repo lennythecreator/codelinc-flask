@@ -29,3 +29,10 @@ body{
 .next-btn{
     color:black
 }
+
+.Dashboard_items{
+    display: grid;
+    
+    justify-content: center;
+    flex-direction: row;
+}
