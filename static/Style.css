@@ -1,5 +1,10 @@
 body{
-    align-items: center;
+    position: absolute;
+width: 375px;
+height: 88px;
+left: 0px;
+top: 0px;
+background: #000000;
 }
 .questionheader{
     align-items: center;
@@ -24,15 +29,91 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    bottom: 0;
 }
 
 .next-btn{
+    bottom: 0;
     color:black
 }
-
-.Dashboard_items{
-    display: grid;
+label{width: 208px;
+    height: 24px;
     
-    justify-content: center;
-    flex-direction: row;
-}
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+    
+    letter-spacing: 0.04em;
+    
+    /* fg/1 */
+    
+    color: #F0F0F0;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;}
+    h1{position: absolute;
+        width: 343px;
+        height: 151px;
+        left: 16px;
+        top: 0px;
+        
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        
+        /* fg/1 */
+        
+        color: #F0F0F0;
+        }
+        h2{width: 208px;
+            height: 24px;
+            
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 120%;
+            /* identical to box height, or 24px */
+            
+            letter-spacing: 0.04em;
+            
+            /* fg/1 */
+            
+            color: #F0F0F0;
+            
+            
+            /* Inside auto layout */
+            
+            flex: none;
+            order: 0;
+            flex-grow: 0;}
+        input{display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 12px;
+            gap: 8px;
+            
+            width: 343px;
+            height: 55px;
+            
+            /* fg/5 */
+            
+            background: #404040;
+            border-radius: 8px;
+            
+            /* Inside auto layout */
+            
+            flex: none;
+            order: 1;
+            flex-grow: 0;}
+            
