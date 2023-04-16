@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 
 app= Flask(__name__,static_folder='static')
 
@@ -23,6 +23,10 @@ def chal():
 def calc():
     return render_template('Calulator.html')
 
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
+
 @app.route('/Tracker.html')
 def tracking():
     return render_template('Tracker.html')
@@ -35,16 +39,22 @@ def ach():
 
 def method_name():
     pass
-"""@app.route("post_questionare",methods=['POST'])
+@app.route("/post_questionaRe",methods=['POST'])
 def Post_Questionare():
     if request.method== 'POST':
-        x= request.form['q']
-        #return render_template(f"Dashboard/{name}/{MI}/{ME}/{GOAL}")
+        print(request.form['name'])
+        print(request.form['ME'])
+        print(request.form['MI'])
+        print(request.form['GOAL'])
+        #x= request.form['Questions']
+        return redirect(f"/Dashboard/{request.form['name']}/{request.form['MI']}/{request.form['ME']}/{request.form['GOAL']}")
+        return render_template(f"profile/{request.form['name']}{request.form['MI']}/{request.form['ME']}/{request.form['GOAL']}")
     pass
 
-@app.route("Dashboard",methods=['GET'])
-def Dashboard_values():
-    pass
-"""
+@app.route("/Dashboard/<name>/<MI>/<ME>/<GOAL>")
+def Dashboard_values(name,MI,ME,GOAL):
+   
+    #user = request.args.get(name=name,MI=MI,ME=ME,GOAL=GOAL)
+    return render_template('profile.html')
 if __name__ == '__main__':
     app.run(debug=True)
