@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/Style.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="Main">
-        <h2>QUestion</h2>
+    
+        <div class="questionheader">
+            <h2>Question</h2>
+        </div>
         <div>
-                <form action="">
-                    <ul>What is your name? </ul>
-                <input type="text">
-
-                <ul>What is your name? </ul>
-                <input type="text">
-
-                <ul>What is your name? </ul>
-                <input type="text">
-                
-                <ul>
-                    <label for="goals">What are your finance goals</label>
-                    <select name="What are your goals" id="">
-                    <ul>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                    </ul>
-                    </select>
-                </ul>
-                </form>
+            <form class="Questions">
+                <div class="question_group">
+                  <label for="q1">What is your name:</label><br>
+                  <input type="text" id="q1" name="q1">
+                </div>
+                <div class="question_group">
+                  <label for="q2">what is your Monthly Income:</label><br>
+                  <input type="text" id="q2" name="q2">
+                </div>
+                <div class="question_group">
+                  <label for="q3">How much do you spend a month:</label><br>
+                  <input type="text" id="q3" name="q3">
+                </div>
+                <div class="question_group">
+                  <label for="q4">What are you Financail Goals:</label><br>
+                  <select id="q4" name="q4">
+                    <option value="">--Please choose an option--</option>
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                  </select>
+                </div>
+                <div class="question_group">
+                  <input type="submit" value="Submit" class="Button">
+                </div>
+              </form>
+              
     
     
         </div>
-    </div>
+    
 </body>
 </html>

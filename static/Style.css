@@ -1,29 +1,27 @@
 body{
-    
-    display: flex;
-    background-color: #64a4fb;
-    justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    top: 100%; 
-   
+    align-items: center;
 }
+.questionheader{
+    align-items: center;
+}
+.Questions{
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    font-size: 25px; 
 
-.Question{
-   display: flex;
-   justify-content: center;
-   text-align: center;
-   padding: 10px;
 }
-.landing_Page_items{
-    background-color:#046cfc;
-    
-    position: relative; 
-    display: flex;
-    
+#q4{
+    font-size: 25px;
+}
+.Button{
+    font-size: 40px;
     border-radius: 15px;
-    width: 600px;
-    
-
+    width: 200px;
 }
-
+.Welcome{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
