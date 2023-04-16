@@ -56,5 +56,46 @@ def Dashboard_values(name,MI,ME,GOAL):
     Total=((int(MI)-int(ME))*12)*10
     #user = request.args.get(name=name,MI=MI,ME=ME,GOAL=GOAL)
     return render_template('profile.html',name=name,Total=Total)
+@app.route('/quiz.html')
+def index2():
+    return render_template('quiz.html')
+
+@app.route('/Achievments', methods=['POST'])
+def submit_quiz():
+    # retrieve the user's answers
+    q1 = request.form['q1']
+    q2 = request.form['q2']
+    q3 = request.form['q3']
+    q4 = request.form['q4']
+    
+
+    # calculate the user's score
+    score = 0
+    if q1 == 'b':
+        score += 1
+    if q2 == 'b':
+        score += 1
+    if q3 == 'b':
+        score += 1
+    if q4 == 'b':
+        score += 1
+    
+
+    # render the results page
+    return redirect(f"/savings_quiz_results/{request.form['q1']}/{request.form['q2']}/{request.form['q3']}/{request.form['q4']}")
+@app.route('/savings_quiz_results/<q1>/<q2>/<q3>/<q4>')
+def results(q1,q2,q3,q4):
+    score = 0
+    if q1 == 'b':
+        score += 1
+    if q2 == 'b':
+        score += 1
+    if q3 == 'b':
+        score += 1
+    if q4 == 'b':
+        score += 1
+    #user = request.args.get(name=name,MI=MI,ME=ME,GOAL=GOAL)
+    return render_template('savings_quiz_results.html',score=score)
+
 if __name__ == '__main__':
     app.run(debug=True)
